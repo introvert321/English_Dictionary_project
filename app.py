@@ -16,4 +16,10 @@ def dictionary(word):
         return "This word doesn't exist: "
 
 word = input("Enter the word: ")
-print(dictionary(word))
+output = dictionary(word)
+
+if type(output) == list:
+    for item in output:
+        print(item)
+else:
+    print(output)
